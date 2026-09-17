@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://product-portfolio.p.yandex.dodois.io/"
+    />
+    <link rel="canonical" href="https://product-portfolio.p.yandex.dodois.io/" />
+    <title>Product Portfolio переехал</title>
+    <script>
+      (() => {
+        const target = "https://product-portfolio.p.yandex.dodois.io";
+        const oldBase = "/Product-Profiolio-DE";
+        let path = window.location.pathname;
+
+        if (path === oldBase || path === `${oldBase}/`) {
+          path = "/";
+        } else if (path.startsWith(`${oldBase}/`)) {
+          path = path.slice(oldBase.length);
+        } else {
+          path = "/";
+        }
+
+        window.location.replace(
+          target + path + window.location.search + window.location.hash
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <p>
+      Product Portfolio переехал.
+      <a href="https://product-portfolio.p.yandex.dodois.io/">
+        Открыть новый адрес
+      </a>
+    </p>
+  </body>
+</html>
